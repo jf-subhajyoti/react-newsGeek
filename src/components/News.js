@@ -90,14 +90,13 @@ export class News extends Component {
           loader={<Loader />}
         >
           <div className='container'>
-
-          </div>
-          <div className='row'>
-            {this.state.newsArticles.map(article => {
-              return (
-                <NewsItem key={article.url} article={article} />
-              )
-            })}
+            <div className='row'>
+              {this.state.newsArticles.map(article => {
+                return (
+                  <NewsItem key={article.url} article={article} />
+                )
+              })}
+            </div>
           </div>
         </InfiniteScroll>
         {/* <div className='container d-flex justify-content-between'>

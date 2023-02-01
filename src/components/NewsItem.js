@@ -5,7 +5,7 @@ export class NewsItem extends Component {
     let { author, urlToImage, title, description, url, publishedAt } = this.props.article;
     return (
       author &&
-      <div className='col-md-4 my-2 mx-2'>
+      <div className='col-md-3 my-2'>
         <div className="card" style={{ "width": "18rem" }}>
           <img src={urlToImage} className="card-img-top" alt="..." />
           <div className="card-body">
