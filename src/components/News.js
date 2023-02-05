@@ -5,6 +5,8 @@ import NewsItem from './NewsItem';
 import PropTypes from 'prop-types';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
+import './News.css';
+
 const News = (props) => {
 
   let baseURL = 'https://newsapi.org/v2', heading = 'NewsGeeks - Top Headlines';
@@ -102,7 +104,7 @@ const News = (props) => {
 
   return (
     <>
-      <h1 className='text-center'>{heading}</h1>
+      <h1 className='text-center primary_heading'>{heading}</h1>
       {/* {loading && <Loader />} */}
       <InfiniteScroll
         dataLength={newsArticles.length} //This is important field to render the next data
